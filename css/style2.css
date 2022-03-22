@@ -1,0 +1,46 @@
+.container{
+    padding: 120px;
+}
+
+.item-lists{
+    width: 100%;
+    max-width: 500px;
+    height: 710px;
+    border:1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+.item-lists > h1{
+    font-size: 18px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.item > h2, p{
+  padding: 12px;
+
+}
+
+.item{
+  border-radius: 8px;
+  padding: 12px;
+  transition: 0.3s;
+}
+.item:hover{
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.item img{
+  float: left;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.item h2{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.clear{
+  clear: both;
+}

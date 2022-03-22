@@ -1,0 +1,5 @@
+.card-box{
+    border-radius: 8px;
+    width: 280px;
+    height: 360px;    
+}

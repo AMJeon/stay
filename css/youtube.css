@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+:root {
+  /* Color */
+  --white-color: #ffffff;
+  --black-color: #202020;
+  --blue-color: #005bd0;
+  --red-color: #ff0000;
+  --grey-dark-color: #919091;
+  --grey-light-color: #e0dfe1;
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+/* 헤더부분 */
+header a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+header {
+  background-color: var(--black-color);
+  display: flex;
+  padding: var(--padding);
+  justify-content: space-between;
+  color: var(--white-color);
+}
+
+header .fa-brands {
+  color: var(--red-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+/* 2. 영상 부분 */
+
+.player {
+}
+
+/* 3. 안내창 부분 */
+.inform .metahashes {
+  font-size: var(--font-micro);
+  padding: 0 0 0 var(--padding);
+}
+.inform .titleinform {
+  display: flex;
+  padding: 0 0 0 var(--padding);
+}
+
+.inform .titleinform .title {
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.titleinform button {
+  background-color: white;
+  height: 0;
+}
+
+.inform .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+  padding: 0 0 0 var(--padding);
+}
+
+.inform .interbttns {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 24px 0;
+}
+
+.inform .interbttns button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+}
+
+.inform .interbttns button i {
+  margin: 0 auto;
+}
+
+.line-4 hr {
+  height: 1px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel .metadata {
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+}
+
+.channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.channel .metadata .channelinform {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadata .channelinform .name {
+  font-size: var(--font-medium);
+}
+
+.channel .metadata .channelinform .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.channel .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+
+.UpNext .UpNexttitle {
+  padding: 10px;
+}
+
+.UpNext .card {
+  display: flex;
+  padding: var(--padding);
+}
+.UpNext .card .img {
+  flex: 1 1 35%;
+}
+
+.UpNext .card .img img {
+  width: 100%;
+}
+
+.UpNext .card .info {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-micro);
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.UpNext .card .moreBtn {
+  flex: 1 1 5%;
+  height: 1%;
+}
+
+.informAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 300px) {
+  .informAndUpNext {
+    flex-direction: row;
+  }
+}
